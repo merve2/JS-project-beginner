@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Görev ve Hava</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Görev ve Hava Uygulaması</h1>
+
+    <!-- Görevler Bölümü -->
+    <h2>Görevler</h2>
+    <form id="gorevForm">
+      <label for="task">Görev:</label>
+      <input
+        type="text"
+        id="task"
+        name="task"
+        required
+        placeholder="Bir görev yazın"
+      />
+      <label for="onemSelect">Önem Derecesi:</label>
+      <select name="Önem" id="onemSelect">
+        <option value="Yüksek Öncelik">Yüksek Öncelik</option>
+        <option value="Normal Öncelik">Normal Öncelik</option>
+        <option value="Düşük Öncelik">Düşük Öncelik</option>
+      </select>
+      <button type="submit">Ekle</button>
+    </form>
+    <ul id="gorevListesi"></ul>
+    <button id="gorevleriTemizle">Görevleri Temizle</button>
+
+    <br /><br />
+
+    <!-- Hava Durumu Bölümü -->
+    <h2>Hava Durumu</h2>
+    <form id="havaForm">
+      <label for="sehir">Şehir:</label>
+      <input
+        type="text"
+        id="sehir"
+        name="sehir"
+        required
+        placeholder="Bir şehir yazın"
+      />
+      <button type="submit" id="getirBtn">Hava Durumu Getir</button>
+    </form>
+
+    <div id="sonuc"></div>
+    <hr />
+
+    <h3>📜 Aranan Şehirler</h3>
+    <ul id="gecmisSehirListesi"></ul>
+    <button id="temizle">Geçmişi Temizle</button>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

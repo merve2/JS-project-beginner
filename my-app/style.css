@@ -1,0 +1,76 @@
+.tamamlandi{
+    text-decoration: line-through;   /* Metni üstü çizili yapar */
+    color: gray;
+    opacity:0.7 ;
+}
+body {
+  font-family: sans-serif;
+  background: #ddedf4;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  background: #d09a9a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form,
+input,
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #eee;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+li.tamamlandi {
+  text-decoration: line-through;
+  opacity: 0.6;
+  color: gray;
+}
+/* Tüm görevler (tamamlanmamış) için varsayılan stil */
+#gorevListesi li {
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  list-style: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Tamamlanmış görevler için ekstra stil */
+#gorevListesi li.tamamlandi {
+  background-color: green;
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
